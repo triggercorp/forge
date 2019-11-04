@@ -7,7 +7,7 @@ Build cross-platform apps with HTML, CSS and JavaScript
     mkdir my_app
     cd my_app
 
-    npm i forge
+    npm i @triggercorp/forge
     npx forge create
 
 
@@ -25,8 +25,8 @@ Build cross-platform apps with HTML, CSS and JavaScript
 
 ## Global installation
 
-    npm i forge -g
+    npm i @triggercorp/forge -g
     forge version
 
     # Or, if your npm installation requires root permissions for a global install:
-    sudo npm i forge -g --unsafe-perm=true
+    sudo npm i @triggercorp/forge -g --unsafe-perm=true
