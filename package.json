@@ -1,0 +1,43 @@
+{
+    "name": "@triggercorp/forge",
+    "version": "4.0.1",
+    "description": "Build cross-platform apps with HTML, CSS and JavaScript",
+    "main": "dist/index.js",
+    "scripts": {
+        "preinstall": "node scripts/preinstall.js",
+        "postinstall": "node scripts/postinstall.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/triggercorp/forge.git"
+    },
+    "keywords": [
+        "trigger"
+    ],
+    "author": "Trigger.IO (https://trigger.io/)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/triggercorp/forge/issues"
+    },
+    "homepage": "https://trigger.io",
+    "engines": {
+        "node": ">=10"
+    },
+    "bin": {
+        "forge": "bin/native/forge"
+    },
+    "os": [
+        "darwin",
+        "linux",
+        "win32"
+    ],
+    "dependencies": {
+        "await-to-js": "~2.1.1",
+        "chalk": "~2.4.2",
+        "debug": "~4.1.1",
+        "fs-extra": "^8.1.0",
+        "node-stream-zip": "~1.8.2",
+        "request": "~2.88.0",
+        "tar-fs": "~2.0.0"
+    }
+}
