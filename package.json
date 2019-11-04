@@ -43,9 +43,9 @@
     "files": [
         "LICENSE",
         "README.md",
-        "lib/util.js",
-        "scripts/preinstall.js",
-        "scripts/postinstall.js",
-        "dist/index.js"
+        "/lib/util.js",
+        "/scripts/preinstall.js",
+        "/scripts/postinstall.js",
+        "/dist/index.js"
     ]
 }
