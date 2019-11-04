@@ -1,6 +1,6 @@
 {
     "name": "@triggercorp/forge",
-    "version": "4.0.1",
+    "version": "3.4.9",
     "description": "Build cross-platform apps with HTML, CSS and JavaScript",
     "main": "dist/index.js",
     "scripts": {
@@ -39,5 +39,13 @@
         "node-stream-zip": "~1.8.2",
         "request": "~2.88.0",
         "tar-fs": "~2.0.0"
-    }
+    },
+    "files": [
+        "LICENSE",
+        "README.md",
+        "lib/util.js",
+        "scripts/preinstall.js",
+        "scripts/postinstall.js",
+        "dist/index.js"
+    ]
 }
