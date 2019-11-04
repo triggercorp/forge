@@ -27,6 +27,9 @@ async function main (argv) {
     const platform = process.platform.toLowerCase();
     log(`executing preinstall.js on ${os.platform()}_${os.arch()}_${os.release()} (${platform})`);
 
+    if (!fs.existsSync("bin")) {
+        fs.mkdirSync("bin");
+    }
     fs.existsSync("bin/darwin-x64") && fs_extra.removeSync("bin/darwin-x64");
     fs.existsSync("bin/unknown-src") && fs_extra.removeSync("bin/unknown-src");
     fs.existsSync("bin/win32-x32") && fs_extra.removeSync("bin/win32-x32");
