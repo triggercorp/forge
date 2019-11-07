@@ -11,6 +11,13 @@ const { info: log, error: log_error, stack: log_stack } = util.logger("postinsta
 // - main ---------------------------------------------------------------------
 
 function main (argv) {
+    // TODO we have an issue where windows 'npx' cannot find new binaries
+    //      until after the installation process is wholly complete
+    const platform = process.platform.toLowerCase();
+    if (platform.startsWith("win32")) {
+        process.exit(0);
+    }
+
     log("verifying installation");
 
     const child = child_process.spawnSync("npx", [ "forge", "version" ]);
