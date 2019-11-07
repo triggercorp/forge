@@ -6,8 +6,9 @@ Build cross-platform apps with HTML, CSS and JavaScript
 
     mkdir my_app
     cd my_app
+    npm init
 
-    npm i @triggercorp/forge
+    npm i @triggercorp/forge --save
     npx forge create
 
 
