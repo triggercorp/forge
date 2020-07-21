@@ -63,9 +63,7 @@ async function main (argv) {
     const archive = path.join("bin", filename);
 
     log(`downloading distribution files from ${source} to ${archive}`);
-    [error, response] = await to(util.download(source, archive, (current, total) => {
-        log(`received ${current} / ${total} bytes`);
-    }));
+    [error, response] = await to(util.download(source, archive, (current, total) => { }));
     if (error) {
         log_error(`failed while requesting ${archive} with: ${error}`);
         log_stack(error.stack);
@@ -97,9 +95,7 @@ async function main (argv) {
     log("successfully verified that the distribution file's sha256 checksum matches download");
 
     log(`extracting ${archive} to bin/`);
-    [error, response] = await to(util.untargz(archive, "bin/", name => {
-        log(`extracting ${name}`);
-    }));
+    [error, response] = await to(util.untargz(archive, "bin/", name => { }));
     if (error) {
         log_error(`failed while extracting ${archive} with: ${error}`);
         log_stack(error.stack);
