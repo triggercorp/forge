@@ -1,6 +1,6 @@
 {
     "name": "@triggercorp/forge",
-    "version": "3.5.9",
+    "version": "3.5.11",
     "description": "Build cross-platform apps with HTML, CSS and JavaScript",
     "main": "dist/index.js",
     "scripts": {
